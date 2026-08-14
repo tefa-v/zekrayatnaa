@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة بنها - كلية التربية النوعية | ذكريات دفعة 2025/2026</title>
+    <meta name="description"
+        content="الموقع التفاعلي الرسمي لذكريات دفعة السنة الأولى بكلية التربية النوعية جامعة بنها 2025/2026">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="bg-container">
+        <img src="assets/college.jpg" alt="كلية التربية النوعية جامعة بنها" class="bg-image">
+    </div>
+    <div class="bg-overlay"></div>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <main class="app-container">
+
+        <header class="header-glass">
+            <div class="logo-group">
+                <div class="logo-wrapper">
+                    <img src="assets/logo.png" alt="شعار كلية التربية النوعية" class="logo-img">
+                </div>
+                <div class="title-group">
+                    <h1>كلية التربية النوعية - جامعة بنها</h1>
+                    <p>
+                        <span>ذكريات دفعة 2025/2026</span>
+                        <span class="badge-tag">السنة الأولى 💖</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <a href="memories.html" class="nav-btn-link" title="صفحة الفيديوهات والذكريات">
+                    <i data-lucide="video"></i>
+                    <span>ذكرياتنا 🎥</span>
+                </a>
+                <button id="sound-toggle-btn" class="icon-btn active" title="تشغيل / كتم المؤثرات الصوتية"
+                    aria-label="الصوت">
+                    <i data-lucide="volume-2"></i>
+                </button>
+            </div>
+        </header>
+
+        <section class="timer-container" aria-label="عداد الوقت المنقضي منذ بداية الرحلة">
+            <div class="timer-header">
+                <div class="timer-title">
+                    <i data-lucide="clock"></i>
+                    <span>الوقت المنقضي على بداية رحلتنا معاً:</span>
+                </div>
+                <div class="start-date-badge">
+                    البداية: 1 أكتوبر 2025 📅
+                </div>
+            </div>
+
+            <div class="timer-grid">
+                <div class="timer-box">
+                    <div id="years-count" class="timer-num">00</div>
+                    <div class="timer-label">سنين</div>
+                </div>
+                <div class="timer-box">
+                    <div id="months-count" class="timer-num">00</div>
+                    <div class="timer-label">شهور</div>
+                </div>
+                <div class="timer-box">
+                    <div id="days-count" class="timer-num">00</div>
+                    <div class="timer-label">أيام</div>
+                </div>
+                <div class="timer-box">
+                    <div id="hours-count" class="timer-num">00</div>
+                    <div class="timer-label">ساعات</div>
+                </div>
+                <div class="timer-box">
+                    <div id="minutes-count" class="timer-num">00</div>
+                    <div class="timer-label">دقائق</div>
+                </div>
+                <div class="timer-box">
+                    <div id="seconds-count" class="timer-num">00</div>
+                    <div class="timer-label">ثواني</div>
+                </div>
+            </div>
+        </section>
+
+        <article class="welcome-card">
+            <div class="card-decor-circle"></div>
+
+            <div class="card-top-bar">
+                <div class="window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="status-indicator">
+                    <span class="pulsing-dot"></span>
+                    <span id="status-text">جاري الكتابة... 🖋️</span>
+                </div>
+            </div>
+
+            <div class="typewriter-body">
+                <span id="typed-content" class="typed-text"></span>
+                <span class="cursor-pen"></span>
+            </div>
+
+            <div class="typewriter-controls">
+                <button id="skip-btn" class="small-btn">
+                    <i data-lucide="fast-forward"></i>
+                    <span>إخلص يااعم😒</span>
+                </button>
+                <button id="replay-btn" class="small-btn">
+                    <i data-lucide="rotate-ccw"></i>
+                    <span>اكتبلي الكلام تاني👀</span>
+                </button>
+            </div>
+        </article>
+
+        <section class="action-section">
+            <button id="btn-khash" class="btn-khash">
+                <span>خش برجلك اليمين</span>
+                <i data-lucide="sparkles"></i>
+            </button>
+            <p id="btn-subtext" class="btn-subtext">دووووس هناا وشوف باقي العظمه 😍</p>
+        </section>
+
+    </main>
+
+    <div id="next-modal" class="next-modal" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <div class="modal-icon">🚀🎉</div>
+            <h2 class="modal-title">الرحلهه لسه مكملهه يابرووو</h2>
+            <p class="modal-desc">
+                وبكدا يبقي عرفتك علينا في نبذه مختصره كدا استعد بقاا علشان جايه ذكريات واوقاات قمر كتييير جاايه</p>
+            <a href="memories.html" id="close-modal-btn" class="close-modal-btn text-decoration-none">يلااا بيناااا🙈</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
