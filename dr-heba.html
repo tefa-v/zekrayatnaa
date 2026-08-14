@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مفجأتنا لدكتور هبه 🎉💐 | كلية التربية النوعية جامعة بنها</title>
+    <meta name="description"
+        content="مفاجأة دفعة السنة الأولى بكلية التربية النوعية جامعة بنها للدكتورة هبة 2025/2026">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="memories-page">
+
+    
+    <div class="bg-memories-container">
+        <div class="aura-orb orb-1"></div>
+        <div class="aura-orb orb-2"></div>
+        <div class="aura-orb orb-3"></div>
+        <div class="glow-grid-overlay"></div>
+    </div>
+
+    
+    <canvas id="particle-canvas"></canvas>
+
+    <main class="app-container">
+
+        
+        <header class="header-glass">
+            <div class="logo-group">
+                <a href="index.html" class="logo-wrapper" title="العودة للرئيسية">
+                    <img src="assets/logo.png" alt="شعار كلية التربية النوعية" class="logo-img">
+                </a>
+                <div class="title-group">
+                    <h1>كلية التربية النوعية - جامعة بنها</h1>
+                    <p>
+                        <span>ذكريات دفعة 2025/2026</span>
+                        <span class="badge-tag gold-badge">مفاجأتنا لدكتور هبه 🎉💐</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <a href="memories.html" class="nav-btn-link" title="العودة لصفحة الذكريات">
+                    <i data-lucide="video"></i>
+                    <span>الذكريات</span>
+                </a>
+                <button id="sound-toggle-btn" class="icon-btn active" title="تشغيل / كتم المؤثرات الصوتية"
+                    aria-label="الصوت">
+                    <i data-lucide="volume-2"></i>
+                </button>
+            </div>
+        </header>
+
+        
+        <section class="memories-hero">
+            <div class="hero-badge">
+                <i data-lucide="heart"></i>
+                <span>أجمل مفاجأة 💐</span>
+            </div>
+            <h1 class="hero-main-title">مفجأتنا لدكتور هبه 🎉💐</h1>
+            <p class="hero-sub-title">لأحلى دكتورة وأجمل عيلة تعبنا مع بعض فيها ❤️</p>
+        </section>
+
+        
+        <section class="featured-memory-section">
+            <article class="memory-quote-card">
+                <div class="quote-header">
+                    <div class="quote-badge">
+                        <i data-lucide="heart-handshake"></i>
+                        <span>شكراً يا دكتوره هبه 💖</span>
+                    </div>
+                    <span class="quote-date">من كل قلوبنا 🥹</span>
+                </div>
+
+                <div class="quote-content">
+                    <i data-lucide="quote" class="quote-icon-bg"></i>
+                    <p class="quote-text">
+                        من اجمل واحسن اللحظات اللي حصلت الترم التاني وتمت بتعاون الدفعه مع بعض وده اثبت لي ان دفعه
+                        التكنولوجيا لما بتتفق على حاجه لازما تتم<br>
+                        شكراً جدا جدا لحضرتك يا دكتور من اول الترم لحد دلوقتي وحضرتك ما قصرتش مع اي حد في حاجه مش
+                        بتعامليني على اساس ان احنا طلاب بتعاملينا ولادك بالظبط وبتراعي ربنا في اللي قدامك يا ربما
+                        يجازيكي كل خير وان شاء الله مكمله معانا لحد سنه رابعه على خير لازم ي دكتوره ما تحرمناش من حنيتك
+                        يا دكتوره هبه 🥹💖<br><br>
+                        عملنا احسن واجمل ذكرى نشكر بيها دكتوره هبه على مجهودها اللي عملته معانا ادتنا اكتر من حقنا 💐<br><br>
+                        دكتور هبه ام لينا مش دكتورتنا وبس ❤️
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        
+        <section class="duo-video-section">
+            <div class="duo-video-area" id="duo-video-area">
+
+                
+                <div class="duo-video-card" id="duo-card-1">
+                    <button class="duo-restore" title="إرجاع الفيديو لمكانه" aria-label="إرجاع">
+                        <i data-lucide="minimize-2"></i>
+                    </button>
+                    <div class="duo-frame">
+                        <iframe data-src="https://drive.google.com/file/d/1vepO4OnvH9IuYFUGEadKuUaQNFX8l23R/preview"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <div class="duo-poster">
+                            <div class="play-button-pulse">
+                                <div class="play-icon-inner">
+                                    <i data-lucide="play"></i>
+                                </div>
+                            </div>
+                            <p>شكراً دكتوره هبه 🎬💐</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="duo-video-card" id="duo-card-2">
+                    <button class="duo-restore" title="إرجاع الفيديو لمكانه" aria-label="إرجاع">
+                        <i data-lucide="minimize-2"></i>
+                    </button>
+                    <div class="duo-frame">
+                        <iframe data-src="https://drive.google.com/file/d/1mucNLqhPxewiEbJ5MPFkU04YY9o3-Ja9/preview"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <div class="duo-poster">
+                            <div class="play-button-pulse">
+                                <div class="play-icon-inner">
+                                    <i data-lucide="play"></i>
+                                </div>
+                            </div>
+                            <p>أجمل ذكرى نشكر بيها 🎬💖</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="photos-gallery-section">
+
+            <div class="photos-deck">
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/1.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/2.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/3.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/4.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/5.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/6.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/7.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/8.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+            </div>
+
+            <div class="photos-deck">
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/9.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/10.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/11.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/12.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/13.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/14.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/15.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/16.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+            </div>
+
+            <div class="photos-deck">
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/17.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/18.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/19.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/20.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/21.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/22.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/23.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/24.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+            </div>
+
+            <div class="photos-deck">
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/25.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/26.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+                <figure class="deck-card">
+                    <div class="deck-frame">
+                        <img src="assets/photo_heba/27.jpeg" alt="مفاجأة دكتور هبه">
+                    </div>
+                </figure>
+            </div>
+
+        </section>
+
+        
+        <section class="bottom-nav-section">
+            <a href="memories.html" class="btn-khash show text-decoration-none">
+                <span>العودة للذكريات 🎥</span>
+                <i data-lucide="arrow-left"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <div id="toast-notification" class="toast-notification">
+        <i data-lucide="check-circle"></i>
+        <span id="toast-text">تم نسخ رابط الذكرى بنجاح! 📋✨</span>
+    </div>
+
+    
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="إغلاق">
+            <i data-lucide="x"></i>
+        </button>
+        <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        <span class="lightbox-caption" id="lightbox-caption"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
